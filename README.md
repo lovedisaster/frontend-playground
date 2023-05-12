@@ -1,2 +1,2 @@
-# frontend-playground
-This is a codebase with hot reloading
+# Frontend-playground
+This is a basic boiler-plate with devserver hot reloading. 
