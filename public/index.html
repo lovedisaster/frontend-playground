@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .clock {
+        width: 300px;
+        height: 300px;
+        border: 10px solid #000;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .mark{
+        width: 5px; 
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+      }
+
+      .top {
+        left: 0;
+        right: 0;
+        top: 5px;
+        height: 10px;
+        margin: auto;
+      }
+
+      .left {
+        left: 5px;
+        bottom: 0;
+        top: 0;
+        width: 10px;
+        margin: auto;
+      }
+
+      .top {
+        left: 0;
+        right: 0;
+        top: 5px;
+        height: 10px;
+        margin: auto;
+      }
+
+      .right {
+        bottom: 0;
+        right: 5px;
+        top: 0;
+        width: 10px;
+        margin: auto;
+      }
+
+      .bottom{
+        left: 0;
+        right: 0;
+        bottom: 5px;
+        height: 10px;
+        margin:auto;
+      }
+
+      .center{
+        width: 10px;
+        height: 10px;
+        background-color: #e2395d;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        position: absolute;
+      }
+
+      .second {
+        width: 2px;
+        height: 130px;
+        background-color: #1ECBE1;
+        position: absolute;
+        transform:translateY(-50%);
+        transform-origin: bottom;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        margin: auto;
+      }
+
+      .minute {
+        width: 5px;
+        height: 110px;
+        background-color: #E75D4B;
+        position: absolute;
+        transform:translateY(-50%);
+        transform-origin: bottom;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        margin: auto;
+      }
+
+      .hour {
+        width: 8px;
+        height: 80px;
+        background-color: #E1341E;
+        position: absolute;
+        transform:translateY(-50%);
+        transform-origin: bottom;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        margin: auto;
+      }
+    </style>
+</head>
+  <body>
+    <div id="app">
+      <div class="clock">
+        <div class="center"></div>
+        <div class="second"></div>
+        <div class="minute"></div>
+        <div class="hour"></div>
+        <span class="mark top"></span>
+        <span class="mark bottom"></span>
+        <span class="mark left"></span>
+        <span class="mark right"></span>
+      </div>
+    </div>
+  </body>
+</html>
