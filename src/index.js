@@ -1,3 +1,5 @@
+import "./styles.css";
+
 setInterval(function() {
     const date = new Date();
     const hour = date.getHours() % 12;
