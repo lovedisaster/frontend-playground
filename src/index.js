@@ -17,3 +17,16 @@ setInterval(function() {
     hourElement.style.transform = `translateY(-50%) rotate(${hourAng}deg)`
 }, 1000)
 
+
+const fetchData = () => {
+    const data = fetch("https://dummyjson.com/todos?limit=10&skip=80");
+    data.then((response) => {
+        response.json().then(data => {
+            console.log(data);
+        })
+    }).catch(e => {
+        console.log(`Error ${e.message}`)
+    })
+}
+
+fetchData();
